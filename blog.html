@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs | BloomIntel</title>
+
+    <link rel="stylesheet" href="style6.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= NAVIGATION ================= -->
+<header class="site-header">
+    <div class="nav-container">
+
+        <a href="index.html" class="logo">
+            <img src="Images/logo.png" alt="BloomIntel">
+        </a>
+
+        <nav class="site-nav" id="siteNav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="application.html">Jobs</a>
+            <a href="industries.html">Industries</a>
+            <a href="blog.html" class="active">Blog</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="contact.html" class="nav-outline-btn">Contact</a>
+            <a href="admin.html" class="nav-outline-btn">Admin</a>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </div>
+</header>
+
+
+<!-- ================= BLOG HERO ================= -->
+<section class="blog-hero">
+
+    <div class="blog-hero-content">
+
+        <span class="hero-small-title">
+            <i class="fa-regular fa-newspaper"></i>
+            BLOOMINTEL INSIGHTS
+        </span>
+
+        <h1>
+            Explore Our
+            <span>Blogs</span>
+        </h1>
+
+        <p>
+            Discover career advice, industry insights, job search tips,
+            workplace trends, and stories from professionals.
+        </p>
+
+        <div class="blog-search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                id="blogSearch"
+                placeholder="Search blogs..."
+                autocomplete="off"
+            >
+
+            <button id="clearSearch" type="button">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+    </div>
+
+    <div class="blog-hero-image">
+        <img
+            src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1000&q=85"
+            alt="Person working and reading"
+        >
+
+        <div class="image-badge">
+            <i class="fa-solid fa-lightbulb"></i>
+            Ideas that move careers forward
+        </div>
+    </div>
+
+</section>
+
+
+<!-- ================= CATEGORY FILTER ================= -->
+<section class="blog-filter-section">
+
+    <div class="section-heading">
+        <span>DISCOVER</span>
+        <h2>Find Your Next Read</h2>
+        <p>
+            Explore articles created to help you grow professionally.
+        </p>
+    </div>
+
+    <div class="blog-filters" id="blogFilters">
+
+        <button class="filter-btn active" data-category="all">
+            All
+        </button>
+
+        <button class="filter-btn" data-category="Career Advice">
+            Career Advice
+        </button>
+
+        <button class="filter-btn" data-category="Job Search">
+            Job Search
+        </button>
+
+        <button class="filter-btn" data-category="Industries">
+            Industries
+        </button>
+
+        <button class="filter-btn" data-category="Workplace">
+            Workplace
+        </button>
+
+        <button class="filter-btn" data-category="Success Stories">
+            Success Stories
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= BLOGS ================= -->
+<section class="blogs-section">
+
+    <div class="blogs-header">
+        <div>
+            <span class="section-label">LATEST ARTICLES</span>
+            <h2>Our Latest Blogs</h2>
+        </div>
+
+        <span class="blog-count" id="blogCount">
+            6 articles
+        </span>
+    </div>
+
+
+    <div class="blog-grid" id="blogGrid">
+
+
+        <!-- BLOG 1 -->
+        <article class="blog-card"
+                 data-category="Career Advice"
+                 data-title="How to Build a Successful Career"
+                 data-keywords="career success growth professional skills">
+
+            <div class="blog-image">
+                <img
+                    src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=85"
+                    alt="Team working together"
+                >
+
+                <span class="blog-category">Career Advice</span>
+            </div>
+
+            <div class="blog-content">
+
+                <div class="blog-meta">
+                    <span>
+                        <i class="fa-regular fa-clock"></i>
+                        5 min read
+                    </span>
+                </div>
+
+                <h3>
+                    How to Build a Successful Career
+                </h3>
+
+                <p>
+                    Learn practical ways to develop your skills,
+                    build confidence, and create a career path
+                    that matches your goals.
+                </p>
+
+            </div>
+        </article>
+
+
+        <!-- BLOG 2 -->
+        <article class="blog-card"
+                 data-category="Job Search"
+                 data-title="How to Make Your Resume Stand Out"
+                 data-keywords="resume cv job application interview">
+
+            <div class="blog-image">
+                <img
+                    src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=900&q=85"
+                    alt="Resume and laptop"
+                >
+
+                <span class="blog-category">Job Search</span>
+            </div>
+
+            <div class="blog-content">
+
+                <div class="blog-meta">
+                    <span>
+                        <i class="fa-regular fa-clock"></i>
+                        4 min read
+                    </span>
+                </div>
+
+                <h3>
+                    How to Make Your Resume Stand Out
+                </h3>
+
+                <p>
+                    Your resume is often the first impression
+                    a recruiter gets. Here are simple ways to
+                    make yours more effective.
+                </p>
+
+            </div>
+        </article>
+
+
+        <!-- BLOG 3 -->
+        <article class="blog-card"
+                 data-category="Industries"
+                 data-title="Top Skills Employers Are Looking For"
+                 data-keywords="skills employers technology industry hiring">
+
+            <div class="blog-image">
+                <img
+                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=85"
+                    alt="Business professionals"
+                >
+
+                <span class="blog-category">Industries</span>
+            </div>
+
+            <div class="blog-content">
+
+                <div class="blog-meta">
+                    <span>
+                        <i class="fa-regular fa-clock"></i>
+                        6 min read
+                    </span>
+                </div>
+
+                <h3>
+                    Top Skills Employers Are Looking For
+                </h3>
+
+                <p>
+                    From technical expertise to communication,
+                    discover the skills that can help you stand
+                    out in today's competitive job market.
+                </p>
+
+            </div>
+        </article>
+
+
+        <!-- BLOG 4 -->
+        <article class="blog-card"
+                 data-category="Workplace"
+                 data-title="How to Succeed in a Modern Workplace"
+                 data-keywords="workplace remote teamwork productivity office">
+
+            <div class="blog-image">
+                <img
+                    src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=85"
+                    alt="Modern workplace"
+                >
+
+                <span class="blog-category">Workplace</span>
+            </div>
+
+            <div class="blog-content">
+
+                <div class="blog-meta">
+                    <span>
+                        <i class="fa-regular fa-clock"></i>
+                        5 min read
+                    </span>
+                </div>
+
+                <h3>
+                    How to Succeed in a Modern Workplace
+                </h3>
+
+                <p>
+                    Explore practical habits that can help you
+                    communicate better, stay productive, and
+                    grow within your organization.
+                </p>
+
+            </div>
+        </article>
+
+
+        <!-- BLOG 5 -->
+        <article class="blog-card"
+                 data-category="Career Advice"
+                 data-title="5 Ways to Improve Your Professional Skills"
+                 data-keywords="professional skills career learning development">
+
+            <div class="blog-image">
+                <img
+                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=85"
+                    alt="Professionals learning together"
+                >
+
+                <span class="blog-category">Career Advice</span>
+            </div>
+
+            <div class="blog-content">
+
+                <div class="blog-meta">
+                    <span>
+                        <i class="fa-regular fa-clock"></i>
+                        4 min read
+                    </span>
+                </div>
+
+                <h3>
+                    5 Ways to Improve Your Professional Skills
+                </h3>
+
+                <p>
+                    Continuous learning can transform your career.
+                    Here are five simple ways to keep improving
+                    your professional abilities.
+                </p>
+
+            </div>
+        </article>
+
+
+        <!-- BLOG 6 -->
+        <article class="blog-card"
+                 data-category="Job Search"
+                 data-title="How to Prepare for Your Next Interview"
+                 data-keywords="interview preparation job search recruiter">
+
+            <div class="blog-image">
+                <img
+                    src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=85"
+                    alt="Job interview"
+                >
+
+                <span class="blog-category">Job Search</span>
+            </div>
+
+            <div class="blog-content">
+
+                <div class="blog-meta">
+                    <span>
+                        <i class="fa-regular fa-clock"></i>
+                        5 min read
+                    </span>
+                </div>
+
+                <h3>
+                    How to Prepare for Your Next Interview
+                </h3>
+
+                <p>
+                    Make your next interview less stressful with
+                    these practical preparation tips and strategies.
+                </p>
+
+            </div>
+        </article>
+
+    </div>
+
+
+    <div class="no-results" id="noResults">
+        <i class="fa-regular fa-face-frown"></i>
+        <h3>No blogs found</h3>
+        <p>Try searching for another topic.</p>
+    </div>
+
+</section>
+
+
+<!-- ================= SUCCESS STORIES ================= -->
+<section class="success-section">
+
+    <div class="section-heading light-heading">
+        <span>REAL PEOPLE • REAL JOURNEYS</span>
+
+        <h2>
+            Success Stories
+        </h2>
+
+        <p>
+            Discover how professionals found new opportunities
+            and moved closer to their career goals.
+        </p>
+    </div>
+
+
+    <div class="stories-grid">
+
+        <article class="story-card"
+                 data-story="ava">
+
+            <div class="story-person">
+
+                <img
+                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=85"
+                    alt="Professional"
+                >
+
+                <div>
+                    <h3>Ava Thompson</h3>
+                    <span>Product Designer</span>
+                </div>
+
+            </div>
+
+            <div class="story-stars">
+                ★★★★★
+            </div>
+
+            <p>
+                "BloomIntel connected me with a role that matched
+                my passion and growth goals within two weeks."
+            </p>
+
+            <button class="story-read-btn"
+                    data-story-id="ava">
+                Read Full Story
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </article>
+
+
+        <article class="story-card"
+                 data-story="daniel">
+
+            <div class="story-person">
+
+                <img
+                    src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=85"
+                    alt="Professional"
+                >
+
+                <div>
+                    <h3>Daniel Brooks</h3>
+                    <span>Software Engineer</span>
+                </div>
+
+            </div>
+
+            <div class="story-stars">
+                ★★★★★
+            </div>
+
+            <p>
+                "The job recommendations were accurate, and the
+                application process felt smooth from start to finish."
+            </p>
+
+            <button class="story-read-btn"
+                    data-story-id="daniel">
+                Read Full Story
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </article>
+
+
+        <article class="story-card"
+                 data-story="mina">
+
+            <div class="story-person">
+
+                <img
+                    src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=300&q=85"
+                    alt="Professional"
+                >
+
+                <div>
+                    <h3>Mina Patel</h3>
+                    <span>Marketing Specialist</span>
+                </div>
+
+            </div>
+
+            <div class="story-stars">
+                ★★★★★
+            </div>
+
+            <p>
+                "I found a remote opportunity that fit my schedule
+                and skills perfectly."
+            </p>
+
+            <button class="story-read-btn"
+                    data-story-id="mina">
+                Read Full Story
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ================= STORY MODAL ================= -->
+<div class="story-modal" id="storyModal">
+
+    <div class="story-modal-overlay"></div>
+
+    <div class="story-modal-content">
+
+        <button class="modal-close" id="modalClose">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="modal-story-image">
+            <img id="modalImage" src="" alt="Success Story">
+        </div>
+
+        <div class="modal-story-content">
+
+            <span class="modal-label">
+                SUCCESS STORY
+            </span>
+
+            <h2 id="modalName">
+                Ava Thompson
+            </h2>
+
+            <span class="modal-role" id="modalRole">
+                Product Designer
+            </span>
+
+            <div class="modal-stars">
+                ★★★★★
+            </div>
+
+            <p id="modalQuote"></p>
+
+            <h3>My BloomIntel Experience</h3>
+
+            <p id="modalDescription"></p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= NEWSLETTER ================= -->
+<section class="newsletter-section">
+
+    <div class="newsletter-content">
+
+        <div>
+            <span>STAY CONNECTED</span>
+            <h2>Get Career Insights in Your Inbox</h2>
+            <p>
+                Subscribe for career advice, job search tips,
+                industry updates, and more.
+            </p>
+        </div>
+
+        <form id="newsletter-form">
+
+            <div class="newsletter-input">
+                <i class="fa-regular fa-envelope"></i>
+
+                <input
+                    type="email"
+                    placeholder="Enter your email address"
+                    required
+                >
+            </div>
+
+            <button type="submit">
+                Subscribe
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <p id="newsletter-message"></p>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+
+    <div class="footer-content">
+
+        <div class="footer-brand">
+
+            <img src="Images/logo1.png" alt="BloomIntel">
+
+            <p>
+                Connecting talent with opportunities
+                that make a difference.
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <h4>Quick Links</h4>
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="application.html">Jobs</a>
+            <a href="industries.html">Industries</a>
+            <a href="blog.html">Blog</a>
+
+        </div>
+
+        <div class="footer-links">
+
+            <h4>Explore</h4>
+
+            <a href="contact.html">Contact Us</a>
+            <a href="application.html">Find Jobs</a>
+            <a href="industries.html">Industries</a>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>
+            © <span id="year"></span> BloomIntel. All rights reserved.
+        </p>
+    </div>
+
+</footer>
+
+
+<script src="script6.js"></script>
+
+
+ <!-- FLOATING CONTACT BUTTONS -->
+
+<div class="floating-contact">
+
+    <a
+        href="tel:+91 9986941327"
+        class="floating-btn phone-btn"
+        aria-label="Call BloomIntel"
+    >
+        <i class="fa-solid fa-phone"></i>
+    </a>
+
+    <a
+        href="https://wa.me/+91 9986941327"
+        class="floating-btn whatsapp-btn"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="WhatsApp BloomIntel"
+    >
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <a
+        href="https://www.linkedin.com/"
+        class="floating-btn linkedin-btn"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="BloomIntel LinkedIn"
+    >
+        <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+
+</div>
+</body>
+</html>

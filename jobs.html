@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jobs | BloomIntel</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Jobs Page CSS -->
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+<!-- =========================
+     NAVIGATION BAR
+========================== -->
+
+<header class="site-header">
+
+    <div class="nav-container">
+
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="BloomIntel Logo">
+        </a>
+
+        <nav class="site-nav" id="siteNav">
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="jobs.html" class="active">Jobs</a>
+
+            <a href="industries.html">Industries</a>
+
+            <a href="blog.html">Blog</a>
+
+        </nav>
+
+        <div class="nav-actions">
+
+            <a href="contact.html" class="nav-btn">
+                Contact
+            </a>
+
+            <a href="admin.html" class="nav-btn">
+                Admin
+            </a>
+
+        </div>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation menu"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+
+</header>
+
+
+    <!-- =========================
+         SMALL JOB SEARCH HERO
+    ========================== -->
+    <section class="jobs-hero">
+
+        <div class="jobs-hero-overlay"></div>
+
+        <div class="jobs-hero-content">
+
+            <span class="hero-small-label">
+                <i class="fa-solid fa-briefcase"></i>
+                CAREER OPPORTUNITIES
+            </span>
+
+            <h1>Find Your Next Opportunity</h1>
+
+            <p>
+                Discover roles that match your skills, experience and career goals.
+            </p>
+
+            <!-- Search Box -->
+            <form class="job-search-box" id="jobSearchForm">
+
+                <div class="search-field">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="text"
+                        id="search-term"
+                        placeholder="Search job title, company or skill..."
+                        autocomplete="off"
+                    >
+                </div>
+
+                <div class="search-field job-type-field">
+                    <i class="fa-solid fa-layer-group"></i>
+
+                    <select id="job-type">
+                        <option value="">All Job Types</option>
+                        <option value="Full Time">Full Time</option>
+                        <option value="Part Time">Part Time</option>
+                        <option value="Remote">Remote</option>
+                        <option value="Hybrid">Hybrid</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="search-button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    Search Jobs
+                </button>
+
+            </form>
+
+        </div>
+    </section>
+
+
+    <!-- =========================
+         FEATURED JOBS
+    ========================== -->
+    <main>
+
+        <section class="featured-jobs-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-label">
+                        <i class="fa-solid fa-star"></i>
+                        OPPORTUNITIES
+                    </span>
+
+                    <h2>Featured Jobs</h2>
+
+                    <p>
+                        Fresh opportunities from leading companies and startups.
+                    </p>
+                </div>
+
+                <div class="job-count">
+                    <strong id="jobCount">0</strong>
+                    <span>Jobs Available</span>
+                </div>
+
+            </div>
+
+
+            <!-- Search result message -->
+            <div class="search-result-message" id="searchResultMessage"></div>
+
+
+            <!-- Job Cards -->
+            <div class="job-grid" id="jobGrid"></div>
+
+
+            <!-- No jobs -->
+            <div class="no-jobs" id="noJobs">
+                <div class="no-jobs-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+                <h3>No jobs found</h3>
+
+                <p>
+                    Try changing your search or selecting a different job type.
+                </p>
+
+                <button id="clearSearch" class="clear-search-btn">
+                    Clear Search
+                </button>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <img src="images/logo1.png" alt="BloomIntel">
+
+                <p>
+                    Connecting talented professionals with meaningful
+                    career opportunities.
+                </p>
+            </div>
+
+            <div class="footer-links">
+
+                <h4>Quick Links</h4>
+
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="industries.html">Industries</a>
+                <a href="blog.html">Blog</a>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h4>Get In Touch</h4>
+
+                <a href="contact.html">Contact Us</a>
+                <a href="admin.html">Admin</a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                © <span id="year"></span> BloomIntel. All rights reserved.
+            </p>
+        </div>
+
+    </footer>
+
+
+    <!-- Back To Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+
+    <!-- JavaScript -->
+    <script src="script3.js"></script>
+    <!-- FLOATING CONTACT BUTTONS -->
+
+<div class="floating-contact">
+
+    <a
+        href="tel:+91 9986941327"
+        class="floating-btn phone-btn"
+        aria-label="Call BloomIntel"
+    >
+        <i class="fa-solid fa-phone"></i>
+    </a>
+
+    <a
+        href="https://wa.me/+91 9986941327"
+        class="floating-btn whatsapp-btn"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="WhatsApp BloomIntel"
+    >
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <a
+        href="https://www.linkedin.com/"
+        class="floating-btn linkedin-btn"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="BloomIntel LinkedIn"
+    >
+        <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+
+</div>
+
+</body>
+</html>

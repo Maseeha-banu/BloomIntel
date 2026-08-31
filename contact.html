@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | BloomIntel</title>
+
+    <link rel="stylesheet" href="style5.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+<!-- =========================
+     NAVIGATION BAR
+========================== -->
+
+<header class="site-header">
+
+    <div class="nav-container">
+
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="BloomIntel Logo">
+        </a>
+
+        <nav class="site-nav" id="siteNav">
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="jobs.html">Jobs</a>
+
+            <a href="industries.html">Industries</a>
+
+            <a href="blog.html">Blog</a>
+
+        </nav>
+
+        <div class="nav-actions">
+
+            <a href="contact.html" class="nav-btn">
+                Contact
+            </a>
+
+            <a href="admin.html" class="nav-btn">
+                Admin
+            </a>
+
+        </div>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation menu"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+
+</header>
+
+
+    <!-- ================= CONTACT HERO ================= -->
+    <section class="contact-hero">
+
+        <div class="contact-hero-overlay"></div>
+
+        <div class="contact-hero-content">
+            <h1>Contact Us</h1>
+            <p>
+                Have a question or need assistance? We are here to help.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT INFORMATION ================= -->
+    <section class="contact-info-section">
+
+        <div class="contact-info-container">
+
+            <!-- Email -->
+            <div class="contact-info-item">
+                <div class="contact-info-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+
+                <div>
+                    <h3>Email</h3>
+                    <a href="mailto:careers@bloomintel.in">
+                        careers@bloomintel.in
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- WhatsApp -->
+            <div class="contact-info-item">
+                <div class="contact-info-icon">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+
+                <div>
+                    <h3>WhatsApp</h3>
+                    <a href="https:+91 9986941327" target="_blank">
+                        +91 9986941327
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- Address -->
+            <div class="contact-info-item">
+                <div class="contact-info-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+
+                <div>
+                    <h3>Address</h3>
+                    <p>
+                        Jayanagar, Bangalore 560011
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SEND MESSAGE ================= -->
+    <section class="message-section">
+
+        <div class="message-container">
+
+            <div class="message-heading">
+                <h2>Send Us a Message</h2>
+                <p>
+                    Fill out the form below and our team will get back to you.
+                </p>
+            </div>
+
+
+            <div class="message-card">
+
+                <form id="contactForm">
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Enter your name"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter your email"
+                                required>
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="Enter your phone number">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input
+                                type="text"
+                                id="subject"
+                                name="subject"
+                                placeholder="What is this about?"
+                                required>
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group full-width">
+                        <label for="message">Message</label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            placeholder="Write your message here..."
+                            required></textarea>
+                    </div>
+
+
+                    <button type="submit" class="send-message-btn">
+                        Send Message
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+
+                    <p id="contactMessage" class="contact-message"></p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ACTION BUTTONS ================= -->
+    <section class="contact-actions">
+
+        <div class="contact-actions-container">
+
+            <div class="action-content">
+                <h2>Looking for your next opportunity?</h2>
+                <p>
+                    Whether you are looking for a job or hiring talented professionals,
+                    BloomIntel can help.
+                </p>
+            </div>
+
+            <div class="action-buttons">
+
+                <a href="application.html" class="action-btn primary-btn">
+                    Apply for a Job
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="papplication.html" class="action-btn secondary-btn">
+                    Post a Job
+                    <i class="fa-solid fa-briefcase"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-column footer-brand">
+                <img src="images/logo1.png" alt="BloomIntel Logo">
+
+                <p>
+                    Connecting talented professionals with the right
+                    opportunities and helping businesses find great talent.
+                </p>
+            </div>
+
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="industries.html">Industries</a>
+                <a href="blog.html">Blog</a>
+            </div>
+
+
+            <div class="footer-column">
+                <h3>For Employers</h3>
+
+                <a href="post-job.html">Post a Job</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="admin.html">Admin</a>
+            </div>
+
+
+            <div class="footer-column">
+                <h3>Contact</h3>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    careers@bloomintel.in
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                   Jayanagar, Bangalore 560011
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+            <p>
+                © <span id="year"></span> BloomIntel. All rights reserved.
+            </p>
+        </div>
+
+    </footer>
+
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+
+    <script src="script5.js"></script>
+
+     <!-- FLOATING CONTACT BUTTONS -->
+
+<div class="floating-contact">
+
+    <a
+        href="tel:+91 9986941327"
+        class="floating-btn phone-btn"
+        aria-label="Call BloomIntel"
+    >
+        <i class="fa-solid fa-phone"></i>
+    </a>
+
+    <a
+        href="https://wa.me/+91 9986941327"
+        class="floating-btn whatsapp-btn"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="WhatsApp BloomIntel"
+    >
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <a
+        href="https://www.linkedin.com/"
+        class="floating-btn linkedin-btn"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="BloomIntel LinkedIn"
+    >
+        <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,1103 @@
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", Arial, sans-serif;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =====================================================
+   PAGE BACKGROUND
+===================================================== */
+
+.about-page {
+    min-height: 100vh;
+    position: relative;
+
+    background-image:
+        linear-gradient(
+            rgba(255, 255, 255, 0.90),
+            rgba(255, 255, 255, 0.94)
+        ),
+        url("images/imgb.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.about-page::before {
+    content: "";
+
+    position: fixed;
+    inset: 0;
+
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(2px);
+
+    pointer-events: none;
+    z-index: 0;
+}
+
+.about-page > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* =====================================================
+   NAVIGATION BAR
+===================================================== */
+
+.site-header {
+    width: 100%;
+    height: 80px;
+
+    background: #ffffff;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    z-index: 1000;
+
+    border-bottom: 1px solid #edf1f5;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.nav-container {
+    width: 90%;
+    max-width: 1400px;
+
+    height: 100%;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 135px;
+    height: auto;
+
+    display: block;
+}
+
+
+/* =====================================================
+   NAVIGATION LINKS
+===================================================== */
+
+.site-nav {
+    display: flex;
+    align-items: center;
+
+    gap: 32px;
+
+    margin-left: 38px;
+}
+
+.site-nav a {
+    position: relative;
+
+    color: #53657a;
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: color 0.3s ease;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+    color: #149447;
+}
+
+.site-nav a.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -11px;
+
+    width: 100%;
+    height: 2px;
+
+    background: #149447;
+}
+
+
+/* =====================================================
+   CONTACT / ADMIN BUTTONS
+===================================================== */
+
+.nav-actions {
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+}
+
+.nav-btn {
+    min-width: 105px;
+    height: 44px;
+
+    padding: 0 22px;
+
+    border: 1.8px solid #149447;
+    border-radius: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #149447;
+
+    background: transparent;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.nav-btn:hover {
+    background: #149447;
+    color: #ffffff;
+}
+
+
+/* =====================================================
+   MOBILE MENU
+===================================================== */
+
+.menu-toggle {
+    display: none;
+
+    margin-left: auto;
+
+    background: none;
+    border: none;
+
+    cursor: pointer;
+
+    padding: 8px;
+}
+
+.menu-toggle span {
+    display: block;
+
+    width: 25px;
+    height: 2px;
+
+    background: #222;
+
+    margin: 5px 0;
+
+    transition: 0.3s;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.about-hero {
+    text-align: center;
+
+    padding: 55px 20px 30px;
+}
+
+.about-hero h1 {
+    color: #173f35;
+
+    font-size: clamp(36px, 5vw, 56px);
+
+    line-height: 1.15;
+
+    font-weight: 800;
+
+    margin-bottom: 12px;
+}
+
+.about-hero p {
+    max-width: 720px;
+
+    margin: 0 auto;
+
+    color: #60716b;
+
+    font-size: 17px;
+}
+
+
+/* =====================================================
+   CARDS SECTION
+===================================================== */
+
+.about-cards-section {
+    width: 100%;
+
+    padding: 15px 20px 0;
+}
+
+.about-cards-container {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 28px;
+
+    align-items: start;
+}
+
+
+/* =====================================================
+   ABOUT CARDS
+===================================================== */
+
+.about-card {
+    position: relative;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    border: 1px solid rgba(218, 228, 223, 0.9);
+
+    border-radius: 22px;
+
+    padding: 38px 40px;
+
+    box-shadow:
+        0 12px 35px rgba(25, 65, 52, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 18px 42px rgba(25, 65, 52, 0.13);
+
+    border-color: rgba(35, 140, 98, 0.35);
+}
+
+
+/* =====================================================
+   CARD ICON
+===================================================== */
+
+.card-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    background: #eef8f3;
+    color: #238c62;
+
+    font-size: 22px;
+
+    margin-bottom: 18px;
+}
+
+
+/* =====================================================
+   CARD HEADING
+===================================================== */
+
+.about-card h2 {
+    color: #173f35;
+
+    font-size: 29px;
+
+    font-weight: 750;
+
+    margin-bottom: 18px;
+}
+
+.about-card h3 {
+    color: #238c62;
+
+    font-size: 20px;
+
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+/* =====================================================
+   CARD TEXT
+===================================================== */
+
+.about-card p {
+    color: #52645e;
+
+    font-size: 15.5px;
+
+    line-height: 1.8;
+
+    margin-bottom: 14px;
+}
+
+
+/* =====================================================
+   READ MORE
+===================================================== */
+
+.full-content {
+    display: none;
+}
+
+.about-card.is-expanded .short-content {
+    display: none;
+}
+
+.about-card.is-expanded .full-content {
+    display: block;
+}
+
+
+/* READ MORE BUTTON */
+
+.read-more-btn {
+    border: none;
+
+    background: transparent;
+
+    color: #238c62;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    padding: 5px 0;
+
+    margin-top: 5px;
+
+    transition: color 0.3s ease;
+}
+
+.read-more-btn:hover {
+    color: #176f4e;
+
+    text-decoration: underline;
+}
+
+
+/* =====================================================
+   MISSION / VISION
+===================================================== */
+
+.mission-content {
+    margin-bottom: 25px;
+
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid #e2ebe6;
+}
+
+.vision-content {
+    margin-top: 0;
+}
+
+
+/* =====================================================
+   LIST
+===================================================== */
+
+.about-card ul {
+    margin: 10px 0 18px 20px;
+
+    padding: 0;
+}
+
+.about-card li {
+    color: #52645e;
+
+    font-size: 15.5px;
+
+    line-height: 1.75;
+
+    margin-bottom: 7px;
+
+    padding-left: 4px;
+}
+
+.about-card li::marker {
+    color: #238c62;
+}
+
+
+/* =====================================================
+   TAGLINE
+===================================================== */
+
+.tagline {
+    margin-top: 22px;
+
+    padding: 15px 18px;
+
+    border-left: 4px solid #238c62;
+
+    background: #f0f8f4;
+
+    border-radius: 8px;
+
+    color: #173f35;
+
+    font-weight: 700;
+
+    font-style: italic;
+}
+
+
+/* =====================================================
+   REVIEWS
+===================================================== */
+
+.reviews-section {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 28px auto 0;
+
+    padding: 0 20px 55px;
+}
+
+.reviews-section h2 {
+    text-align: center;
+
+    color: #173f35;
+
+    font-size: 32px;
+
+    margin-bottom: 7px;
+}
+
+.reviews-section > p {
+    text-align: center;
+
+    color: #65756f;
+
+    margin-bottom: 22px;
+}
+
+
+/* =====================================================
+   REVIEW CONTAINER
+===================================================== */
+
+.review-container {
+    display: block;
+}
+
+
+/* =====================================================
+   REVIEW CARD
+===================================================== */
+
+.review-card {
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    border: 1px solid #e2eae6;
+
+    border-radius: 20px;
+
+    padding: 28px;
+
+    box-shadow:
+        0 8px 25px rgba(25, 65, 52, 0.07);
+}
+
+.review-card h3 {
+    color: #173f35;
+
+    margin-bottom: 5px;
+}
+
+.review-card > p {
+    color: #65756f;
+}
+
+
+/* =====================================================
+   STARS
+===================================================== */
+
+.stars {
+    color: #f4b942;
+
+    font-size: 18px;
+
+    letter-spacing: 2px;
+
+    margin: 8px 0;
+}
+
+
+/* =====================================================
+   REVIEW FORM
+===================================================== */
+
+.give-review {
+    margin-top: 20px;
+}
+
+.give-review input,
+.give-review textarea,
+.give-review select {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    margin-bottom: 13px;
+
+    border: 1px solid #d7e2dd;
+
+    border-radius: 10px;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    outline: none;
+
+    background: #fff;
+}
+
+.give-review textarea {
+    min-height: 110px;
+
+    resize: vertical;
+}
+
+.give-review input:focus,
+.give-review textarea:focus,
+.give-review select:focus {
+    border-color: #238c62;
+
+    box-shadow:
+        0 0 0 3px rgba(35, 140, 98, 0.1);
+}
+
+
+/* =====================================================
+   SUBMIT
+===================================================== */
+
+.review-submit {
+    border: none;
+
+    padding: 12px 25px;
+
+    border-radius: 25px;
+
+    background: #238c62;
+
+    color: white;
+
+    font-family: inherit;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: background 0.3s ease;
+}
+
+.review-submit:hover {
+    background: #176f4e;
+}
+
+#reviewMessage {
+    margin-top: 12px;
+
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.site-footer {
+    background: #173f35;
+
+    color: #fff;
+
+    padding: 32px 20px;
+}
+
+.footer-container {
+    width: 92%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+}
+
+.site-footer p {
+    color: rgba(255, 255, 255, 0.75);
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   REVEAL
+===================================================== */
+
+.reveal {
+    opacity: 0;
+
+    transform: translateY(20px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* =====================================================
+   SCROLL PROGRESS
+===================================================== */
+
+.scroll-progress {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    height: 3px;
+
+    width: 0;
+
+    background: #238c62;
+
+    z-index: 9999;
+}
+
+
+/* =====================================================
+   BACK TO TOP
+===================================================== */
+
+#backToTop {
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #238c62;
+
+    color: #fff;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: all 0.3s ease;
+
+    z-index: 999;
+}
+
+#backToTop.show {
+    opacity: 1;
+
+    visibility: visible;
+}
+
+#backToTop:hover {
+    background: #176f4e;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   FLOATING CONTACT BUTTONS
+========================================================= */
+
+.floating-contact {
+    position: fixed;
+    right: 22px;
+    bottom: 85px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    z-index: 9999;
+}
+
+.floating-contact a {
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+    color: #238c62;
+
+    border: 1.5px solid #238c62;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+
+    transition: all 0.3s ease;
+}
+
+.floating-contact a:hover {
+    background: #238c62;
+    color: #ffffff;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.16);
+}
+
+
+/* PHONE */
+.floating-phone:hover {
+    background: #238c62;
+}
+
+
+/* WHATSAPP */
+.floating-whatsapp:hover {
+    background: #25D366;
+    border-color: #25D366;
+}
+
+
+/* LINKEDIN */
+.floating-linkedin:hover {
+    background: #0A66C2;
+    border-color: #0A66C2;
+}
+
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+    .floating-contact {
+        right: 15px;
+        bottom: 75px;
+        gap: 8px;
+    }
+
+    .floating-contact a {
+        width: 42px;
+        height: 42px;
+        font-size: 16px;
+    }
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1100px) {
+
+    .nav-container {
+        width: 94%;
+    }
+
+    .site-nav {
+        gap: 20px;
+
+        margin-left: 25px;
+    }
+
+    .site-nav a {
+        font-size: 14px;
+    }
+
+    .nav-btn {
+        min-width: 90px;
+
+        padding: 0 16px;
+    }
+}
+
+
+@media (max-width: 950px) {
+
+    .site-nav {
+        gap: 20px;
+
+        margin-left: 25px;
+    }
+
+    .nav-actions {
+        gap: 8px;
+    }
+
+    .nav-btn {
+        min-width: 85px;
+
+        padding: 0 14px;
+
+        font-size: 13px;
+    }
+
+    .about-cards-container {
+        gap: 20px;
+    }
+
+    .about-card {
+        padding: 32px;
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    .site-header {
+        height: 75px;
+    }
+
+    .nav-container {
+        width: 94%;
+    }
+
+    .logo img {
+        width: 130px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-actions {
+        margin-left: auto;
+
+        margin-right: 10px;
+    }
+
+    .site-nav {
+        display: none;
+
+        position: absolute;
+
+        top: 75px;
+        left: 0;
+
+        width: 100%;
+
+        margin: 0;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 12px;
+
+        background: #fff;
+
+        border-top: 1px solid #e5e7eb;
+
+        box-shadow:
+            0 10px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .site-nav.open {
+        display: flex;
+    }
+
+    .site-nav a {
+        font-size: 15px;
+    }
+
+    .site-nav a.active::after {
+        display: none;
+    }
+
+    .about-cards-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-card {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .nav-container {
+        width: 94%;
+    }
+
+    .logo img {
+        width: 110px;
+    }
+
+    .nav-actions {
+        gap: 6px;
+    }
+
+    .nav-btn {
+        min-width: auto;
+
+        height: 38px;
+
+        padding: 0 12px;
+
+        font-size: 11px;
+    }
+
+    .about-hero {
+        padding: 40px 18px 25px;
+    }
+
+    .about-hero h1 {
+        font-size: 36px;
+    }
+
+    .about-hero p {
+        font-size: 15px;
+    }
+
+    .about-cards-section {
+        padding: 10px 14px 0;
+    }
+
+    .about-card {
+        padding: 27px 23px;
+
+        border-radius: 17px;
+    }
+
+    .about-card h2 {
+        font-size: 25px;
+    }
+
+    .about-card p,
+    .about-card li {
+        font-size: 15px;
+    }
+
+    .reviews-section {
+        padding: 0 14px 40px;
+
+        margin-top: 22px;
+    }
+
+    .review-card {
+        padding: 22px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .floating-contact {
+        right: 15px;
+
+        bottom: 75px;
+    }
+
+    .floating-btn {
+        width: 42px;
+        height: 42px;
+
+        font-size: 16px;
+    }
+}

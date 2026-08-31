@@ -1,0 +1,1105 @@
+/* =========================================================
+   GENERAL
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", Arial, sans-serif;
+    color: #17221c;
+    background: #f7faf8;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+
+/* =========================================================
+   NAVIGATION BAR
+========================================================= */
+
+.site-header {
+    width: 100%;
+    height: 80px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.nav-container {
+    width: 90%;
+    max-width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 135px;
+    height: auto;
+    display: block;
+}
+
+.site-nav {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-left: 38px;
+}
+
+.site-nav a {
+    color: #222;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+    color: #16834a;
+}
+
+.nav-actions {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-btn {
+    padding: 9px 22px;
+    border: 1.5px solid #16834a;
+    border-radius: 30px;
+
+    color: #16834a;
+    background: transparent;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background: #16834a;
+    color: #ffffff;
+}
+
+.menu-toggle {
+    display: none;
+    margin-left: auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: #222;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+
+/* =========================================================
+   APPLICATION HERO
+========================================================= */
+
+.application-hero {
+    min-height: 390px;
+    position: relative;
+
+    background-image:
+        url("images/application-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.application-hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(10, 38, 25, 0.82),
+            rgba(17, 66, 42, 0.68),
+            rgba(10, 38, 25, 0.52)
+        );
+}
+
+.application-hero-content {
+    width: min(1000px, 90%);
+
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero-small-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+
+    background: rgba(255, 255, 255, 0.13);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+
+    padding: 7px 14px;
+    border-radius: 30px;
+
+    margin-bottom: 14px;
+}
+
+.application-hero h1 {
+    font-size: clamp(36px, 5vw, 58px);
+    line-height: 1.15;
+    margin-bottom: 12px;
+    font-weight: 750;
+}
+
+.application-hero p {
+    max-width: 650px;
+    margin: 0 auto;
+
+    font-size: 16px;
+    opacity: 0.92;
+}
+
+
+/* =========================================================
+   APPLICATION SECTION
+========================================================= */
+
+.application-section {
+    padding: 80px 20px 100px;
+    background: #f7faf8;
+}
+
+.application-container {
+    width: min(1050px, 100%);
+    margin: auto;
+}
+
+.application-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 45px;
+}
+
+.section-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    color: #16834b;
+
+    font-size: 11px;
+    font-weight: 750;
+    letter-spacing: 1.5px;
+
+    margin-bottom: 8px;
+}
+
+.application-intro h2 {
+    font-size: 36px;
+    color: #17221c;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.application-intro p {
+    color: #68756d;
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   APPLICATION CARD
+========================================================= */
+
+.application-card {
+    background: #ffffff;
+
+    border: 1px solid #e5ebe7;
+    border-radius: 22px;
+
+    padding: 42px;
+
+    box-shadow:
+        0 10px 35px rgba(23, 60, 39, 0.07);
+}
+
+
+/* =========================================================
+   FORM SECTION
+========================================================= */
+
+.form-section {
+    padding-bottom: 38px;
+    margin-bottom: 38px;
+
+    border-bottom: 1px solid #edf0ee;
+}
+
+.form-section-heading {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    margin-bottom: 28px;
+}
+
+.form-icon {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 13px;
+
+    background: #eaf6ef;
+    color: #16834b;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 19px;
+
+    flex-shrink: 0;
+}
+
+.form-section-heading h3 {
+    color: #18251e;
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+
+.form-section-heading p {
+    color: #8a968f;
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   FORM GRID
+========================================================= */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+}
+
+.form-group {
+    width: 100%;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+
+/* =========================================================
+   LABELS
+========================================================= */
+
+.form-group label {
+    display: block;
+
+    color: #26342c;
+
+    font-size: 13px;
+    font-weight: 650;
+
+    margin-bottom: 8px;
+}
+
+.form-group label span {
+    color: #16834b;
+}
+
+
+/* =========================================================
+   INPUT BOX
+========================================================= */
+
+.input-box {
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+
+    border: 1px solid #dfe7e2;
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    padding: 0 15px;
+
+    transition: 0.3s ease;
+}
+
+.input-box:focus-within {
+    border-color: #16834b;
+
+    box-shadow:
+        0 0 0 3px rgba(22, 131, 75, 0.08);
+}
+
+.input-box i {
+    width: 22px;
+    margin-right: 9px;
+
+    color: #16834b;
+
+    font-size: 14px;
+}
+
+.input-box input,
+.input-box select {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: #26342c;
+    font-size: 14px;
+}
+
+.input-box input::placeholder {
+    color: #9aa59f;
+}
+
+.input-box select {
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   TEXTAREA
+========================================================= */
+
+.form-group textarea {
+    width: 100%;
+
+    resize: vertical;
+
+    min-height: 150px;
+
+    border: 1px solid #dfe7e2;
+    border-radius: 10px;
+
+    padding: 15px;
+
+    outline: none;
+
+    color: #26342c;
+    background: #ffffff;
+
+    font-size: 14px;
+
+    transition: 0.3s ease;
+}
+
+.form-group textarea:focus {
+    border-color: #16834b;
+
+    box-shadow:
+        0 0 0 3px rgba(22, 131, 75, 0.08);
+}
+
+.form-group textarea::placeholder {
+    color: #9aa59f;
+}
+
+
+/* =========================================================
+   FILE UPLOAD
+========================================================= */
+
+.file-upload {
+    min-height: 160px;
+
+    border: 2px dashed #cfe2d6;
+    border-radius: 14px;
+
+    background: #f8fcf9;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.file-upload:hover {
+    border-color: #16834b;
+    background: #f0f8f3;
+}
+
+.file-upload i {
+    font-size: 30px;
+    color: #16834b;
+    margin-bottom: 10px;
+}
+
+.file-upload strong {
+    color: #26342c;
+    font-size: 14px;
+}
+
+.file-upload span {
+    color: #8a968f;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.file-upload input {
+    display: none;
+}
+
+.file-name {
+    display: block;
+
+    color: #68756d;
+
+    font-size: 12px;
+
+    margin-top: 8px;
+}
+
+
+/* =========================================================
+   ERROR MESSAGE
+========================================================= */
+
+.error-message {
+    display: block;
+
+    color: #c0392b;
+
+    font-size: 11px;
+
+    margin-top: 5px;
+
+    min-height: 15px;
+}
+
+
+/* =========================================================
+   CONSENT
+========================================================= */
+
+.form-consent {
+    margin-bottom: 28px;
+}
+
+.form-consent label {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+
+    color: #68756d;
+
+    font-size: 13px;
+
+    cursor: pointer;
+}
+
+.form-consent input {
+    margin-top: 4px;
+
+    accent-color: #16834b;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   SUBMIT BUTTON
+========================================================= */
+
+.submit-area {
+    display: flex;
+    justify-content: center;
+}
+
+.submit-btn {
+    min-width: 230px;
+
+    border: none;
+    border-radius: 30px;
+
+    padding: 14px 25px;
+
+    background: #16834b;
+    color: #ffffff;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #0e6c3c;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px rgba(22, 131, 75, 0.2);
+}
+
+.submit-btn i {
+    transition: transform 0.3s ease;
+}
+
+.submit-btn:hover i {
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   SUCCESS MESSAGE
+========================================================= */
+
+.success-message {
+    display: none;
+
+    margin-top: 30px;
+
+    padding: 20px;
+
+    background: #eaf6ef;
+
+    border: 1px solid #c9e4d2;
+
+    border-radius: 14px;
+
+    align-items: center;
+    gap: 15px;
+}
+
+.success-message.show {
+    display: flex;
+}
+
+.success-icon {
+    width: 45px;
+    height: 45px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #16834b;
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.success-message h3 {
+    color: #17643c;
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+
+.success-message p {
+    color: #47705a;
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.site-footer {
+    background: #14231a;
+    color: #ffffff;
+
+    padding-top: 55px;
+}
+
+.footer-container {
+    width: min(1200px, 92%);
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+
+    gap: 60px;
+
+    padding-bottom: 45px;
+}
+
+.footer-brand img {
+    width: 140px;
+
+    margin-bottom: 15px;
+}
+
+.footer-brand p {
+    color: #aebbb3;
+
+    max-width: 330px;
+
+    font-size: 13px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links h4 {
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+.footer-links a {
+    color: #aebbb3;
+
+    font-size: 13px;
+
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+    transform: translateX(3px);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+
+    text-align: center;
+
+    padding: 18px;
+
+    color: #87958c;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   BACK TO TOP
+========================================================= */
+
+.back-to-top {
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #16834b;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(10px);
+
+    transition: 0.3s ease;
+
+    z-index: 100;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    background: #0e6c3c;
+}
+
+
+/* =========================================================
+   RESPONSIVE NAVIGATION
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .site-nav,
+    .nav-actions {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .site-nav.open {
+        display: flex;
+
+        position: absolute;
+
+        top: 80px;
+        left: 0;
+
+        width: 100%;
+
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 0;
+
+        background: #ffffff;
+
+        padding: 20px 5%;
+
+        box-shadow:
+            0 5px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .site-nav.open a {
+        width: 100%;
+        padding: 12px 0;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 760px) {
+
+    .site-header {
+        height: 75px;
+    }
+
+    .logo img {
+        width: 125px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .site-nav {
+        position: absolute;
+
+        top: 75px;
+        left: 0;
+        right: 0;
+
+        background: #ffffff;
+
+        padding: 20px;
+
+        display: none;
+
+        flex-direction: column;
+        align-items: stretch;
+
+        box-shadow:
+            0 10px 20px rgba(0,0,0,0.08);
+    }
+
+    .site-nav.open {
+        display: flex;
+    }
+
+    .site-nav a {
+        padding: 8px 0;
+    }
+
+    .application-hero {
+        min-height: 350px;
+    }
+
+    .application-hero h1 {
+        font-size: 38px;
+    }
+
+    .application-section {
+        padding: 60px 16px 70px;
+    }
+
+    .application-card {
+        padding: 30px 24px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width {
+        grid-column: auto;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .site-header {
+        height: 58px;
+    }
+
+    .nav-container {
+        width: 92%;
+    }
+
+    .logo img {
+        width: 112px;
+    }
+
+    .menu-toggle {
+        width: 36px;
+        min-height: 36px;
+        padding: 6px;
+    }
+
+    .menu-toggle span {
+        width: 22px;
+    }
+
+    .site-nav {
+        top: 58px;
+    }
+
+    .application-hero {
+        min-height: 300px;
+
+        background-position: center;
+    }
+
+    .application-hero-content {
+        width: 90%;
+    }
+
+    .application-hero h1 {
+        font-size: 32px;
+    }
+
+    .application-hero p {
+        font-size: 13px;
+    }
+
+    .hero-small-label {
+        font-size: 10px;
+    }
+
+    .application-section {
+        padding: 50px 14px 60px;
+    }
+
+    .application-intro h2 {
+        font-size: 28px;
+    }
+
+    .application-intro p {
+        font-size: 13px;
+    }
+
+    .application-card {
+        padding: 24px 18px;
+        border-radius: 16px;
+    }
+
+    .form-section-heading {
+        align-items: flex-start;
+    }
+
+    .form-section-heading h3 {
+        font-size: 18px;
+    }
+
+    .form-section-heading p {
+        font-size: 12px;
+    }
+
+    .form-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 16px;
+    }
+
+    .submit-btn {
+        width: 100%;
+    }
+
+    .success-message {
+        align-items: flex-start;
+    }
+
+    .back-to-top {
+        right: 15px;
+        bottom: 15px;
+
+        width: 42px;
+        height: 42px;
+    }
+}
+
+/* =========================================================
+   FLOATING CONTACT BUTTONS
+========================================================= */
+
+.floating-contact {
+    position: fixed;
+    right: 22px;
+    bottom: 85px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    z-index: 9999;
+}
+
+.floating-contact a {
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+    color: #238c62;
+
+    border: 1.5px solid #238c62;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+
+    transition: all 0.3s ease;
+}
+
+.floating-contact a:hover {
+    background: #238c62;
+    color: #ffffff;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.16);
+}
+
+
+/* PHONE */
+.floating-phone:hover {
+    background: #238c62;
+}
+
+
+/* WHATSAPP */
+.floating-whatsapp:hover {
+    background: #25D366;
+    border-color: #25D366;
+}
+
+
+/* LINKEDIN */
+.floating-linkedin:hover {
+    background: #0A66C2;
+    border-color: #0A66C2;
+}
+
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+    .floating-contact {
+        right: 15px;
+        bottom: 75px;
+        gap: 8px;
+    }
+
+    .floating-contact a {
+        width: 42px;
+        height: 42px;
+        font-size: 16px;
+    }
+}

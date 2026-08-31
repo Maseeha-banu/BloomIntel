@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Post a Job | BloomIntel</title>
+
+    <link rel="stylesheet" href="style12.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body class="page-post-job">
+
+    <!-- =========================
+         NAVIGATION BAR
+    ========================== -->
+
+    <header class="site-header">
+
+        <div class="nav-container">
+
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="BloomIntel Logo">
+            </a>
+
+            <nav class="site-nav" id="siteNav">
+
+                <a href="index.html">Home</a>
+
+                <a href="about.html">About</a>
+
+                <a href="jobs.html">Jobs</a>
+
+                <a href="industries.html">Industries</a>
+
+                <a href="blog.html">Blog</a>
+
+                <div class="mobile-nav-actions">
+                    <a href="contact.html" class="nav-btn">Contact</a>
+                    <a href="admin.html" class="nav-btn">Admin</a>
+                </div>
+
+            </nav>
+
+            <div class="nav-actions">
+
+                <a href="contact.html" class="nav-btn">
+                    Contact
+                </a>
+
+                <a href="admin.html" class="nav-btn">
+                    Admin
+                </a>
+
+            </div>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+
+    <section class="post-job-hero">
+
+        <div class="post-job-overlay"></div>
+
+        <div class="post-job-hero-content">
+
+            <span class="hero-label">
+                <i class="fa-solid fa-building"></i>
+                FOR EMPLOYERS
+            </span>
+
+            <h1>Post a Job</h1>
+
+            <p>
+                Connect with talented professionals and find the right
+                people to grow your organization.
+            </p>
+
+            <a href="#job-form" class="hero-btn">
+                Post Your Opportunity
+                <i class="fa-solid fa-arrow-down"></i>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         INTRODUCTION
+    ========================== -->
+
+    <section class="employer-intro">
+
+        <div class="intro-content">
+
+            <span class="section-label">
+                <i class="fa-solid fa-handshake"></i>
+                BUILD YOUR TEAM
+            </span>
+
+            <h2>
+                Find the right talent for your next opportunity
+            </h2>
+
+            <p>
+                Share your job opening with qualified professionals and
+                make your hiring process easier, faster and more effective.
+            </p>
+
+        </div>
+
+        <div class="intro-features">
+
+            <div class="intro-feature">
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+
+                <div>
+                    <h3>Reach Professionals</h3>
+                    <p>
+                        Connect with candidates looking for their next
+                        career opportunity.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="intro-feature">
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-bullseye"></i>
+                </div>
+
+                <div>
+                    <h3>Find the Right Match</h3>
+                    <p>
+                        Present your requirements clearly to attract
+                        relevant applicants.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="intro-feature">
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+
+                <div>
+                    <h3>Grow Your Team</h3>
+                    <p>
+                        Discover people who can contribute to your
+                        company's future.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         JOB APPLICATION FORM
+    ========================== -->
+
+    <section class="job-form-section" id="job-form">
+
+        <div class="form-heading">
+
+            <span class="section-label">
+                <i class="fa-solid fa-briefcase"></i>
+                JOB DETAILS
+            </span>
+
+            <h2>Create Your Job Opportunity</h2>
+
+            <p>
+                Provide the details below so candidates can understand
+                your opportunity clearly.
+            </p>
+
+        </div>
+
+
+        <form class="job-form" id="jobForm">
+
+            <!-- BASIC INFORMATION -->
+
+            <div class="form-card">
+
+                <div class="form-card-heading">
+
+                    <div class="form-card-icon">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+
+                    <div>
+                        <h3>Company Information</h3>
+                        <p>Tell candidates about your organization.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="companyName">
+                            Company Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="companyName"
+                            name="companyName"
+                            placeholder="Enter company name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="companyEmail">
+                            Contact Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="companyEmail"
+                            name="companyEmail"
+                            placeholder="company@example.com"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="companyWebsite">
+                            Company Website
+                        </label>
+
+                        <input
+                            type="url"
+                            id="companyWebsite"
+                            name="companyWebsite"
+                            placeholder="https://example.com"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="industry">
+                            Industry
+                        </label>
+
+                        <select id="industry" name="industry" required>
+
+                            <option value="">
+                                Select industry
+                            </option>
+
+                            <option value="technology">
+                                Technology
+                            </option>
+
+                            <option value="finance">
+                                Finance & Banking
+                            </option>
+
+                            <option value="healthcare">
+                                Healthcare
+                            </option>
+
+                            <option value="education">
+                                Education
+                            </option>
+
+                            <option value="retail">
+                                Retail & E-commerce
+                            </option>
+
+                            <option value="manufacturing">
+                                Manufacturing
+                            </option>
+
+                            <option value="marketing">
+                                Marketing & Advertising
+                            </option>
+
+                            <option value="consulting">
+                                Consulting
+                            </option>
+
+                            <option value="other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- JOB INFORMATION -->
+
+            <div class="form-card">
+
+                <div class="form-card-heading">
+
+                    <div class="form-card-icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+
+                    <div>
+                        <h3>Job Information</h3>
+                        <p>Describe the position you are hiring for.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="form-group full-width">
+
+                        <label for="jobTitle">
+                            Job Title
+                        </label>
+
+                        <input
+                            type="text"
+                            id="jobTitle"
+                            name="jobTitle"
+                            placeholder="e.g. Frontend Developer"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="jobType">
+                            Job Type
+                        </label>
+
+                        <select id="jobType" name="jobType" required>
+
+                            <option value="">
+                                Select job type
+                            </option>
+
+                            <option value="full-time">
+                                Full Time
+                            </option>
+
+                            <option value="part-time">
+                                Part Time
+                            </option>
+
+                            <option value="contract">
+                                Contract
+                            </option>
+
+                            <option value="internship">
+                                Internship
+                            </option>
+
+                            <option value="freelance">
+                                Freelance
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="experience">
+                            Experience Required
+                        </label>
+
+                        <select id="experience" name="experience" required>
+
+                            <option value="">
+                                Select experience
+                            </option>
+
+                            <option value="fresher">
+                                Fresher
+                            </option>
+
+                            <option value="0-2">
+                                0 - 2 Years
+                            </option>
+
+                            <option value="2-5">
+                                2 - 5 Years
+                            </option>
+
+                            <option value="5-8">
+                                5 - 8 Years
+                            </option>
+
+                            <option value="8+">
+                                8+ Years
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="location">
+                            Location
+                        </label>
+
+                        <div class="input-with-icon">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            <input
+                                type="text"
+                                id="location"
+                                name="location"
+                                placeholder="e.g. Bengaluru, India"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="salary">
+                            Salary Range
+                        </label>
+
+                        <input
+                            type="text"
+                            id="salary"
+                            name="salary"
+                            placeholder="e.g. ₹4 - ₹8 LPA"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group full-width">
+
+                        <label for="jobDescription">
+                            Job Description
+                        </label>
+
+                        <textarea
+                            id="jobDescription"
+                            name="jobDescription"
+                            rows="6"
+                            placeholder="Describe the role, responsibilities and what the candidate will be doing..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- REQUIREMENTS -->
+
+            <div class="form-card">
+
+                <div class="form-card-heading">
+
+                    <div class="form-card-icon">
+                        <i class="fa-solid fa-list-check"></i>
+                    </div>
+
+                    <div>
+                        <h3>Candidate Requirements</h3>
+                        <p>Tell candidates what you are looking for.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="form-group full-width">
+
+                    <label for="requirements">
+                        Skills & Requirements
+                    </label>
+
+                    <textarea
+                        id="requirements"
+                        name="requirements"
+                        rows="5"
+                        placeholder="e.g. HTML, CSS, JavaScript, communication skills..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <div class="form-group full-width">
+
+                    <label for="benefits">
+                        Benefits & Perks
+                    </label>
+
+                    <textarea
+                        id="benefits"
+                        name="benefits"
+                        rows="4"
+                        placeholder="e.g. Flexible working hours, health benefits, learning opportunities..."
+                    ></textarea>
+
+                </div>
+
+            </div>
+
+
+            <!-- SUBMIT -->
+
+            <div class="form-submit-area">
+
+                <p>
+                    <i class="fa-solid fa-circle-info"></i>
+                    Please make sure all job information is accurate before submitting.
+                </p>
+
+                <button type="submit" class="submit-job-btn">
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                    Publish Job
+
+                </button>
+
+            </div>
+
+            <div class="form-message" id="formMessage"></div>
+
+        </form>
+
+    </section>
+
+
+    <!-- =========================
+         WHY POST WITH BLOOMINTEL
+    ========================== -->
+
+    <section class="why-employers">
+
+        <div class="why-employers-heading">
+
+            <span class="section-label">
+                <i class="fa-solid fa-star"></i>
+                WHY BLOOMINTEL
+            </span>
+
+            <h2>
+                Make hiring simpler
+            </h2>
+
+            <p>
+                Everything you need to share opportunities and connect
+                with potential talent.
+            </p>
+
+        </div>
+
+
+        <div class="employer-benefits">
+
+            <div class="benefit-card">
+
+                <i class="fa-solid fa-user-group"></i>
+
+                <h3>Connect With Talent</h3>
+
+                <p>
+                    Put your opportunity in front of professionals
+                    actively looking for their next role.
+                </p>
+
+            </div>
+
+
+            <div class="benefit-card">
+
+                <i class="fa-solid fa-bolt"></i>
+
+                <h3>Quick & Simple</h3>
+
+                <p>
+                    Create and publish your job opportunity through
+                    a simple and straightforward process.
+                </p>
+
+            </div>
+
+
+            <div class="benefit-card">
+
+                <i class="fa-solid fa-building-circle-check"></i>
+
+                <h3>Build Your Organization</h3>
+
+                <p>
+                    Find people with the skills and experience needed
+                    to help your organization move forward.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <img src="images/logo1.png" alt="BloomIntel Logo">
+
+                <p>
+                    Connecting talented professionals with meaningful
+                    career opportunities and helping organizations
+                    build stronger teams.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>Quick Links</h4>
+
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="industries.html">Industries</a>
+                <a href="blog.html">Blog</a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>For Employers</h4>
+
+                <a href="papplication.html">
+                    Post a Job
+                </a>
+
+                <a href="contact.html">
+                    Contact Us
+                </a>
+
+                <a href="admin.html">
+                    Admin
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 BloomIntel. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         BACK TO TOP
+    ========================== -->
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+
+    <script src="script12.js"></script>
+
+     <!-- FLOATING CONTACT BUTTONS -->
+
+<div class="floating-contact">
+
+    <a
+        href="tel:+91 9986941327"
+        class="floating-btn phone-btn"
+        aria-label="Call BloomIntel"
+    >
+        <i class="fa-solid fa-phone"></i>
+    </a>
+
+    <a
+        href="https://wa.me/+91 9986941327"
+        class="floating-btn whatsapp-btn"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="WhatsApp BloomIntel"
+    >
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <a
+        href="https://www.linkedin.com/"
+        class="floating-btn linkedin-btn"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="BloomIntel LinkedIn"
+    >
+        <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+
+</div>
+
+</body>
+</html>

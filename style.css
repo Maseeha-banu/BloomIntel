@@ -1,0 +1,846 @@
+/* =========================
+   BASIC RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: #26364a;
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   HEADER / NAVIGATION
+========================= */
+
+.site-header {
+    width: 100%;
+    background: #ffffff;
+
+    border-bottom: 1px solid #e7eeeb;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+
+.nav-container {
+    max-width: 1250px;
+    min-height: 82px;
+
+    margin: auto;
+
+    padding: 0 25px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 38px;
+}
+
+
+/* =========================
+   BLOOMINTEL LOGO
+========================= */
+
+.logo {
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+}
+
+
+.logo img {
+    width: 145px;
+    height: auto;
+
+    display: block;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.site-nav {
+    display: flex;
+    align-items: center;
+
+    gap: 27px;
+
+    flex: 1;
+}
+
+
+.nav-link {
+    position: relative;
+
+    text-decoration: none;
+
+    color: #294b43;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: 0.3s ease;
+}
+
+
+.nav-link:hover {
+    color: #218b6d;
+}
+
+
+/* ACTIVE NAVIGATION */
+
+.nav-link.active {
+    color: #218b6d;
+}
+
+
+.nav-link.active::after {
+    content: "";
+
+    position: absolute;
+
+    width: 22px;
+    height: 2px;
+
+    background: #218b6d;
+
+    left: 50%;
+    bottom: -9px;
+
+    transform: translateX(-50%);
+
+    border-radius: 10px;
+}
+
+
+/* =========================
+   RIGHT SIDE BUTTONS
+========================= */
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.nav-outline-btn {
+    border: 1.5px solid #218b6d;
+
+    color: #218b6d;
+
+    padding: 9px 19px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+
+.nav-outline-btn:hover {
+    background: #218b6d;
+
+    color: #ffffff;
+}
+
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: calc(100vh - 82px);
+
+    position: relative;
+
+    /*
+       Three background images
+       are used through JavaScript.
+    */
+
+    background-image:
+        linear-gradient(
+            rgba(5, 16, 32, 0.52),
+            rgba(5, 16, 32, 0.52)
+        ),
+        url("images/background.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+
+    animation: heroBackground 8s infinite;
+}
+
+
+/*
+   Background image scrolling/change
+*/
+
+@keyframes heroBackground {
+
+    0%,
+    30% {
+        background-image:
+            linear-gradient(
+                rgba(5, 16, 32, 0.52),
+                rgba(5, 16, 32, 0.52)
+            ),
+            url("images/background.png");
+    }
+
+    33%,
+    63% {
+        background-image:
+            linear-gradient(
+                rgba(5, 16, 32, 0.52),
+                rgba(5, 16, 32, 0.52)
+            ),
+            url("images/background2.png");
+    }
+
+    66%,
+    96% {
+        background-image:
+            linear-gradient(
+                rgba(5, 16, 32, 0.52),
+                rgba(5, 16, 32, 0.52)
+            ),
+            url("images/backkground3.png");
+    }
+
+    100% {
+        background-image:
+            linear-gradient(
+                rgba(5, 16, 32, 0.52),
+                rgba(5, 16, 32, 0.52)
+            ),
+            url("images/background.png");
+    }
+}
+
+
+
+/* =========================
+   SEARCH CONTAINER
+========================= */
+
+.search-container {
+    width: 100%;
+
+    padding: 30px 9% 0;
+
+    position: relative;
+
+    z-index: 5;
+}
+
+
+/* =========================
+   SEARCH BOX
+========================= */
+
+.search-box {
+    width: 100%;
+
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    min-height: 95px;
+
+    padding: 15px;
+
+    background: #ffffff;
+
+    border-radius: 17px;
+
+    display: grid;
+
+    grid-template-columns:
+        1.2fr
+        1fr
+        1fr
+        220px;
+
+    gap: 15px;
+
+    align-items: center;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+
+
+/* =========================
+   SEARCH FIELDS
+========================= */
+
+.search-field {
+    height: 62px;
+
+    border: 1px solid #dfe5ec;
+
+    border-radius: 11px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 18px;
+
+    background: #ffffff;
+}
+
+
+.search-field i {
+    color: #149447;
+
+    font-size: 20px;
+
+    margin-right: 14px;
+}
+
+
+.search-field input {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 16px;
+
+    color: #333;
+}
+
+
+.search-field input::placeholder {
+    color: #6d7785;
+}
+
+
+
+/* =========================
+   JOB TYPE
+========================= */
+
+.job-type {
+    position: relative;
+}
+
+
+.job-type select {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 16px;
+
+    color: #222;
+
+    cursor: pointer;
+
+    appearance: auto;
+}
+
+
+
+/* =========================
+   SEARCH BUTTON
+========================= */
+
+.search-btn {
+    height: 62px;
+
+    border: none;
+
+    border-radius: 11px;
+
+    background: #149447;
+
+    color: #ffffff;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    transition: 0.3s ease;
+}
+
+
+.search-btn:hover {
+    background: #107c3b;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(20, 148, 71, 0.3);
+}
+
+
+
+/* =========================
+   HERO CONTENT
+========================= */
+
+.hero-content {
+    min-height: calc(100vh - 82px);
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding-top: 60px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+
+/* =========================
+   HERO HEADING
+========================= */
+
+.hero-content h1 {
+    max-width: 1000px;
+
+    color: #ffffff;
+
+    font-size: clamp(42px, 5vw, 70px);
+
+    line-height: 1.08;
+
+    font-weight: 800;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 5px;
+}
+
+
+.hero-content h1 span {
+    display: block;
+
+    color: #24bce5;
+
+    margin-top: 10px;
+}
+
+
+
+/* =========================
+   GET STARTED BUTTON
+========================= */
+
+.get-started {
+    margin-top: 38px;
+
+    min-width: 280px;
+
+    height: 62px;
+
+    padding: 0 35px;
+
+    border-radius: 10px;
+
+    background: #149447;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    transition: 0.3s ease;
+}
+
+
+.get-started span {
+    font-size: 27px;
+
+    line-height: 1;
+
+    transition: 0.3s ease;
+}
+
+
+.get-started:hover {
+    background: #107c3b;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(20, 148, 71, 0.35);
+}
+
+
+.get-started:hover span {
+    transform: translateX(5px);
+}
+
+
+/* =========================================================
+   FLOATING CONTACT BUTTONS
+========================================================= */
+
+.floating-contact {
+    position: fixed;
+    right: 22px;
+    bottom: 85px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    z-index: 9999;
+}
+
+.floating-contact a {
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+    color: #238c62;
+
+    border: 1.5px solid #238c62;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+
+    transition: all 0.3s ease;
+}
+
+.floating-contact a:hover {
+    background: #238c62;
+    color: #ffffff;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.16);
+}
+
+
+/* PHONE */
+.floating-phone:hover {
+    background: #238c62;
+}
+
+
+/* WHATSAPP */
+.floating-whatsapp:hover {
+    background: #25D366;
+    border-color: #25D366;
+}
+
+
+/* LINKEDIN */
+.floating-linkedin:hover {
+    background: #0A66C2;
+    border-color: #0A66C2;
+}
+
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+    .floating-contact {
+        right: 15px;
+        bottom: 75px;
+        gap: 8px;
+    }
+
+    .floating-contact a {
+        width: 42px;
+        height: 42px;
+        font-size: 16px;
+    }
+}
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1100px) {
+
+    .nav-container {
+        gap: 20px;
+    }
+
+
+    .site-nav {
+        gap: 15px;
+    }
+
+
+    .nav-link {
+        font-size: 13px;
+    }
+
+
+    .search-box {
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+
+    .search-btn {
+        width: 100%;
+    }
+
+}
+
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 780px) {
+
+    .nav-container {
+        min-height: 72px;
+
+        padding: 0 20px;
+
+        flex-wrap: wrap;
+    }
+
+
+    .logo img {
+        width: 125px;
+    }
+
+
+    .site-nav {
+        position: absolute;
+
+        top: 72px;
+
+        left: 0;
+
+        width: 100%;
+
+        background: #ffffff;
+
+        border-bottom:
+            1px solid #e5eeea;
+
+        display: none;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 20px 25px;
+
+        gap: 18px;
+    }
+
+
+    /*
+       This keeps compatibility
+       with your existing JavaScript.
+    */
+
+    .site-nav.open {
+        display: flex;
+    }
+
+
+    .site-nav a.active::after {
+        display: none;
+    }
+
+
+    .nav-actions {
+        margin-left: auto;
+    }
+
+
+    .nav-outline-btn {
+        padding: 7px 13px;
+
+        font-size: 11px;
+    }
+
+
+    .hero {
+        min-height:
+            calc(100vh - 72px);
+    }
+
+
+    .search-container {
+        padding: 20px 18px 0;
+    }
+
+
+    .search-box {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+
+        min-height: auto;
+    }
+
+
+    .hero-content {
+        padding-top: 50px;
+
+        padding-bottom: 40px;
+    }
+
+
+    .hero-content h1 {
+        font-size: 40px;
+
+        letter-spacing: -1px;
+    }
+
+
+    .get-started {
+        min-width: 230px;
+
+        height: 56px;
+
+        margin-top: 32px;
+    }
+
+
+    /* FLOATING BUTTONS */
+
+    .floating-contact-buttons {
+        right: 15px;
+
+        gap: 10px;
+    }
+
+
+    .floating-btn {
+        width: 48px;
+
+        height: 48px;
+
+        font-size: 19px;
+    }
+
+}
+
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+    .nav-actions {
+        gap: 7px;
+    }
+
+
+    .nav-outline-btn {
+        padding: 7px 10px;
+
+        font-size: 10px;
+    }
+
+
+    .hero-content h1 {
+        font-size: 34px;
+    }
+
+
+    .floating-contact-buttons {
+        right: 10px;
+
+        gap: 8px;
+    }
+
+
+    .floating-btn {
+        width: 45px;
+
+        height: 45px;
+
+        font-size: 18px;
+    }
+
+}

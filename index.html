@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>BloomIntel | Find Your Next Opportunity</title>
+
+
+    <!-- =========================
+         GOOGLE FONT
+    ========================= -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =========================
+         FONT AWESOME
+    ========================= -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- =========================
+         CSS
+    ========================= -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         HEADER / NAVIGATION
+    ========================= -->
+
+    <header class="site-header">
+
+        <div class="nav-container">
+
+
+            <!-- LOGO -->
+
+            <a
+                href="index.html"
+                class="logo"
+            >
+
+                <img
+                    src="images/logo.png"
+                    alt="BloomIntel"
+                >
+
+            </a>
+
+
+            <!-- NAVIGATION -->
+
+            <nav class="site-nav">
+
+                <a
+                    href="index.html"
+                    class="nav-link active"
+                >
+                    Home
+                </a>
+
+                <a
+                    href="about.html"
+                    class="nav-link"
+                >
+                    About
+                </a>
+
+                <a
+                    href="jobs.html"
+                    class="nav-link"
+                >
+                    Jobs
+                </a>
+
+                <a
+                    href="industries.html"
+                    class="nav-link"
+                >
+                    Industries
+                </a>
+
+                <a
+                    href="blog.html"
+                    class="nav-link"
+                >
+                    Blog
+                </a>
+
+            </nav>
+
+
+            <!-- RIGHT SIDE BUTTONS -->
+
+            <div class="nav-actions">
+
+                <a
+                    href="contact.html"
+                    class="nav-outline-btn"
+                >
+                    Contact
+                </a>
+                <div class="nav-actions"></div>
+                <a
+                    href="admin.html"
+                    class="nav-outline-btn"
+                >
+                    Admin
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================
+         HERO
+    ========================= -->
+
+    <main>
+
+        <section class="hero">
+
+
+            <!-- =========================
+                 SEARCH
+            ========================= -->
+
+            <div class="search-container">
+
+                <div class="search-box">
+
+
+                    <!-- JOB KEYWORD -->
+
+                    <div class="search-field">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <input
+                            type="text"
+                            id="searchInput"
+                            placeholder="Job title, keyword or skill"
+                        >
+
+                    </div>
+
+
+                    <!-- JOB TYPE -->
+
+                    <div class="search-field job-type">
+
+                        <i class="fa-solid fa-briefcase"></i>
+
+                        <select id="jobType">
+
+                            <option value="">
+                                Job Type
+                            </option>
+
+                            <option value="Full Time">
+                                Full Time
+                            </option>
+
+                            <option value="Part Time">
+                                Part Time
+                            </option>
+
+                            <option value="Remote">
+                                Remote
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- LOCATION -->
+
+                    <div class="search-field">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <input
+                            type="text"
+                            id="locationInput"
+                            placeholder="Location"
+                        >
+
+                    </div>
+
+
+                    <!-- SEARCH BUTTON -->
+
+                    <button
+                        type="button"
+                        class="search-btn"
+                        id="searchButton"
+                    >
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        Search Jobs
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================
+                 HERO CONTENT
+            ========================= -->
+
+            <div class="hero-content">
+
+                <h1>
+
+                    Find work that
+
+                    <span>
+                        moves you forward.
+                    </span>
+
+                </h1>
+
+
+                <!-- GET STARTED -->
+
+                <a
+                    href="home.html"
+                    class="get-started"
+                >
+
+                    Get Started
+
+                    <span>
+                        →
+                    </span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+      <!-- FLOATING CONTACT BUTTONS -->
+
+<div class="floating-contact">
+
+    <a
+        href="tel:+91 9986941327"
+        class="floating-btn phone-btn"
+        aria-label="Call BloomIntel"
+    >
+        <i class="fa-solid fa-phone"></i>
+    </a>
+
+    <a
+        href="https://wa.me/+91 9986941327"
+        class="floating-btn whatsapp-btn"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="WhatsApp BloomIntel"
+    >
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <a
+        href="https://www.linkedin.com/"
+        class="floating-btn linkedin-btn"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="BloomIntel LinkedIn"
+    >
+        <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+
+</div>
+    <!-- =========================
+         JAVASCRIPT
+    ========================= -->
+
+    <script
+        src="script.js"
+        defer
+    ></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Apply for Jobs | BloomIntel</title>
+
+    <link rel="stylesheet" href="style11.css">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <!-- =====================================================
+         NAVIGATION BAR
+    ====================================================== -->
+
+    <header class="site-header">
+
+        <div class="nav-container">
+
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="BloomIntel">
+            </a>
+
+            <!-- Navigation -->
+            <nav class="site-nav" id="siteNav">
+
+                <a href="index.html">Home</a>
+
+                <a href="about.html">About</a>
+
+                <a href="jobs.html">Jobs</a>
+
+                <a href="industries.html">Industries</a>
+
+                <a href="blog.html">Blog</a>
+
+            </nav>
+
+            <!-- Navigation Buttons -->
+            <div class="nav-actions">
+
+                <a href="contact.html" class="nav-btn">
+                    Contact
+                </a>
+
+                <a href="admin.html" class="nav-btn">
+                    Admin
+                </a>
+
+            </div>
+
+            <!-- Mobile Menu -->
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         APPLICATION HERO
+    ====================================================== -->
+
+    <section class="application-hero">
+
+        <div class="application-hero-overlay"></div>
+
+        <div class="application-hero-content">
+
+            <span class="hero-small-label">
+                <i class="fa-solid fa-briefcase"></i>
+                CAREER OPPORTUNITIES
+            </span>
+
+            <h1>Apply for Jobs</h1>
+
+            <p>
+                Take the next step in your career and discover
+                opportunities that match your skills and ambitions.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         APPLICATION SECTION
+    ====================================================== -->
+
+    <main class="application-section">
+
+        <div class="application-container">
+
+            <!-- Intro -->
+            <div class="application-intro">
+
+                <span class="section-label">
+                    <i class="fa-solid fa-user-tie"></i>
+                    JOIN OUR NETWORK
+                </span>
+
+                <h2>Start Your Career Journey</h2>
+
+                <p>
+                    Tell us a little about yourself and the opportunity
+                    you're looking for. Our team will review your
+                    application and connect you with relevant
+                    opportunities.
+                </p>
+
+            </div>
+
+
+            <!-- Application Card -->
+            <div class="application-card">
+
+                <form id="applicationForm">
+
+                    <!-- Personal Information -->
+
+                    <div class="form-section">
+
+                        <div class="form-section-heading">
+
+                            <div class="form-icon">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+
+                            <div>
+                                <h3>Personal Information</h3>
+
+                                <p>
+                                    Tell us about yourself
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+
+                                <label for="fullName">
+                                    Full Name
+                                    <span>*</span>
+                                </label>
+
+                                <div class="input-box">
+                                    <i class="fa-solid fa-user"></i>
+
+                                    <input
+                                        type="text"
+                                        id="fullName"
+                                        name="fullName"
+                                        placeholder="Enter your full name"
+                                        required
+                                    >
+                                </div>
+
+                                <small class="error-message"></small>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="email">
+                                    Email Address
+                                    <span>*</span>
+                                </label>
+
+                                <div class="input-box">
+                                    <i class="fa-solid fa-envelope"></i>
+
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        placeholder="Enter your email"
+                                        required
+                                    >
+                                </div>
+
+                                <small class="error-message"></small>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="phone">
+                                    Phone Number
+                                    <span>*</span>
+                                </label>
+
+                                <div class="input-box">
+                                    <i class="fa-solid fa-phone"></i>
+
+                                    <input
+                                        type="tel"
+                                        id="phone"
+                                        name="phone"
+                                        placeholder="Enter your phone number"
+                                        required
+                                    >
+                                </div>
+
+                                <small class="error-message"></small>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="location">
+                                    Location
+                                    <span>*</span>
+                                </label>
+
+                                <div class="input-box">
+                                    <i class="fa-solid fa-location-dot"></i>
+
+                                    <input
+                                        type="text"
+                                        id="location"
+                                        name="location"
+                                        placeholder="City / Country"
+                                        required
+                                    >
+                                </div>
+
+                                <small class="error-message"></small>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Job Information -->
+
+                    <div class="form-section">
+
+                        <div class="form-section-heading">
+
+                            <div class="form-icon">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </div>
+
+                            <div>
+                                <h3>Job Information</h3>
+
+                                <p>
+                                    Tell us what opportunity you're looking for
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+
+                                <label for="position">
+                                    Position Applying For
+                                    <span>*</span>
+                                </label>
+
+                                <div class="input-box">
+
+                                    <i class="fa-solid fa-briefcase"></i>
+
+                                    <select
+                                        id="position"
+                                        name="position"
+                                        required
+                                    >
+                                        <option value="">
+                                            Select a position
+                                        </option>
+
+                                        <option value="Software Developer">
+                                            Software Developer
+                                        </option>
+
+                                        <option value="UI UX Designer">
+                                            UI/UX Designer
+                                        </option>
+
+                                        <option value="Data Analyst">
+                                            Data Analyst
+                                        </option>
+
+                                        <option value="Marketing Executive">
+                                            Marketing Executive
+                                        </option>
+
+                                        <option value="HR Executive">
+                                            HR Executive
+                                        </option>
+
+                                        <option value="Business Analyst">
+                                            Business Analyst
+                                        </option>
+
+                                        <option value="Other">
+                                            Other
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+                                <small class="error-message"></small>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="experience">
+                                    Experience
+                                    <span>*</span>
+                                </label>
+
+                                <div class="input-box">
+
+                                    <i class="fa-solid fa-chart-line"></i>
+
+                                    <select
+                                        id="experience"
+                                        name="experience"
+                                        required
+                                    >
+                                        <option value="">
+                                            Select experience
+                                        </option>
+
+                                        <option value="Fresher">
+                                            Fresher
+                                        </option>
+
+                                        <option value="0-1">
+                                            0 - 1 Year
+                                        </option>
+
+                                        <option value="1-3">
+                                            1 - 3 Years
+                                        </option>
+
+                                        <option value="3-5">
+                                            3 - 5 Years
+                                        </option>
+
+                                        <option value="5+">
+                                            5+ Years
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+                                <small class="error-message"></small>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="education">
+                                    Highest Education
+                                    <span>*</span>
+                                </label>
+
+                                <div class="input-box">
+
+                                    <i class="fa-solid fa-graduation-cap"></i>
+
+                                    <input
+                                        type="text"
+                                        id="education"
+                                        name="education"
+                                        placeholder="e.g. B.Tech, MBA"
+                                        required
+                                    >
+
+                                </div>
+
+                                <small class="error-message"></small>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="skills">
+                                    Key Skills
+                                    <span>*</span>
+                                </label>
+
+                                <div class="input-box">
+
+                                    <i class="fa-solid fa-code"></i>
+
+                                    <input
+                                        type="text"
+                                        id="skills"
+                                        name="skills"
+                                        placeholder="e.g. HTML, CSS, JavaScript"
+                                        required
+                                    >
+
+                                </div>
+
+                                <small class="error-message"></small>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Resume -->
+
+                    <div class="form-section">
+
+                        <div class="form-section-heading">
+
+                            <div class="form-icon">
+                                <i class="fa-solid fa-file-arrow-up"></i>
+                            </div>
+
+                            <div>
+                                <h3>Resume & Message</h3>
+
+                                <p>
+                                    Share your resume and introduce yourself
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group full-width">
+
+                            <label for="resume">
+                                Upload Resume
+                                <span>*</span>
+                            </label>
+
+                            <label class="file-upload">
+
+                                <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                                <strong>
+                                    Choose your resume
+                                </strong>
+
+                                <span>
+                                    PDF, DOC or DOCX — Maximum 5MB
+                                </span>
+
+                                <input
+                                    type="file"
+                                    id="resume"
+                                    name="resume"
+                                    accept=".pdf,.doc,.docx"
+                                    required
+                                >
+
+                            </label>
+
+                            <small
+                                class="file-name"
+                                id="fileName"
+                            >
+                                No file selected
+                            </small>
+
+                            <small class="error-message"></small>
+
+                        </div>
+
+
+                        <div class="form-group full-width">
+
+                            <label for="message">
+                                Cover Letter / Message
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="6"
+                                placeholder="Tell us why you would be a great fit..."
+                            ></textarea>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Consent -->
+
+                    <div class="form-consent">
+
+                        <label>
+
+                            <input
+                                type="checkbox"
+                                id="agreement"
+                                required
+                            >
+
+                            <span>
+                                I confirm that the information provided
+                                above is accurate and complete.
+                            </span>
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- Submit -->
+
+                    <div class="submit-area">
+
+                        <button
+                            type="submit"
+                            class="submit-btn"
+                        >
+
+                            <span>Submit Application</span>
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- Success Message -->
+
+                    <div
+                        class="success-message"
+                        id="successMessage"
+                    >
+
+                        <div class="success-icon">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+
+                        <div>
+
+                            <h3>Application Submitted!</h3>
+
+                            <p>
+                                Thank you for applying. We will review
+                                your application and get back to you.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <img
+                    src="images/logo1.png"
+                    alt="BloomIntel"
+                >
+
+                <p>
+                    Connecting talented professionals with
+                    meaningful career opportunities and helping
+                    businesses find the right people.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>Quick Links</h4>
+
+                <a href="index.html">Home</a>
+
+                <a href="about.html">About</a>
+
+                <a href="jobs.html">Jobs</a>
+
+                <a href="industries.html">Industries</a>
+
+                <a href="blog.html">Blog</a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>Get In Touch</h4>
+
+                <a href="contact.html">Contact Us</a>
+
+                <a href="application.html">Apply for Jobs</a>
+
+                <a href="admin.html">Admin</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 BloomIntel. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Back To Top -->
+
+    <button
+        class="back-to-top"
+        id="backToTop"
+        aria-label="Back to top"
+    >
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+
+    <script src="script11.js"></script>
+
+
+     <!-- FLOATING CONTACT BUTTONS -->
+
+<div class="floating-contact">
+
+    <a
+        href="tel:+91 9986941327"
+        class="floating-btn phone-btn"
+        aria-label="Call BloomIntel"
+    >
+        <i class="fa-solid fa-phone"></i>
+    </a>
+
+    <a
+        href="https://wa.me/+91 9986941327"
+        class="floating-btn whatsapp-btn"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="WhatsApp BloomIntel"
+    >
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <a
+        href="https://www.linkedin.com/"
+        class="floating-btn linkedin-btn"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="BloomIntel LinkedIn"
+    >
+        <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+
+</div>
+</body>
+</html>
